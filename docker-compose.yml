@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  go:
+    stdin_open: true
+    tty: true
+    build: docker/go
+    volumes:
+      - .:/go/src/github.com/ezynda3/wtf-ethereum-contracts-golang
+    working_dir: /go/src/github.com/ezynda3/wtf-ethereum-contracts-golang
